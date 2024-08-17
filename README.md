@@ -6,7 +6,7 @@
 <img src="https://img.icons8.com/color/144/bootstrap--v2.png" alt="bootstrap" width="50"/>
 <img src="https://img.icons8.com/color/344/javascript--v1.png" alt="JavaScript" width="50"/>
 <img src="http://www.fpdf.org/logo.gif" alt="FPDF" width="70"/>
-<img src="https://img.icons8.com/color/400/000000/mysql-logo.png" alt="JavaScript" width="50"/>
+<img src="https://img.icons8.com/color/400/000000/mysql-logo.png" alt="JavaScript" width="80"/>
 
 
 # **FPDF**
