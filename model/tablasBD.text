@@ -1,0 +1,54 @@
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+  direccion VARCHAR(255) NOT NULL,
+  ciudad VARCHAR(255) NOT NULL
+);
+
+
+
+
+--  tabla para docentes
+CREATE TABLE docentes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    direccion VARCHAR(255),
+    celular VARCHAR(15),
+    email VARCHAR(100),
+    genero ENUM('Masculino', 'Femenino', 'Otro'),
+    fecha_ingreso DATE
+);
+
+--  tabla para asignaturas
+CREATE TABLE asignaturas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    horas_semana INT,
+   descripcion TEXT
+);
+
+--  tabla para cursos
+CREATE TABLE cursos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    nivel VARCHAR(10),
+    periodo_academico VARCHAR(20)
+);
+
+--  tabla para horas de clases
+CREATE TABLE horas_clases (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    dia_semana ENUM('Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'),
+    hora_inicio TIME,
+    hora_fin TIME,
+    id_docente INT,
+    id_asignatura INT,
+    id_curso INT,
+    FOREIGN KEY (id_docente) REFERENCES docentes(id),
+    FOREIGN KEY (id_asignatura) REFERENCES asignaturas(id),
+    FOREIGN KEY (id_curso) REFERENCES cursos(id)
+);
