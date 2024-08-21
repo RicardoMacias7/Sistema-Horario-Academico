@@ -14,7 +14,4 @@ FPDF es una librería PHP que permite generar archivos PDF de manera sencilla y 
 
 
 
-
-
-
 # [**Link Sitio Web** ](http://gestiondehorarios.lovestoblog.com/)
