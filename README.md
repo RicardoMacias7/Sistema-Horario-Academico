@@ -6,6 +6,8 @@
 <img src="https://img.icons8.com/color/144/bootstrap--v2.png" alt="bootstrap" width="50"/>
 <img src="https://img.icons8.com/color/344/javascript--v1.png" alt="JavaScript" width="50"/>
 <img src="http://www.fpdf.org/logo.gif" alt="FPDF" width="70"/>
+<img src="https://img.icons8.com/color/344/000000/mysql-logo.png" alt="mysql" width="80"/>
+
 
 # **FPDF**
 FPDF es una librería PHP que permite generar archivos PDF de manera sencilla y flexible. Con FPDF, puedes crear PDFs desde cero, agregando elementos como texto, imágenes, gráficos, y más, directamente desde tu código PHP.
